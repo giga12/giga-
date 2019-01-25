@@ -389,3 +389,36 @@ opacity: 1
 	transform: scale(1.2);
 
 }
+
+.responsive{
+	display: none;
+}
+
+.bar{
+
+	display: block;
+
+}
+
+@media only screen and (width:1080px)
+{
+.menu{
+	display: none;
+}
+
+.bar{
+	width: 30px;
+	height: 5px;
+	background-color: black;
+	margin-top: 5px;
+
+}
+
+.burger{
+	position: absolute;
+	margin-right: 100px
+}
+
+
+}
+
