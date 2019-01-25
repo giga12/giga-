@@ -391,7 +391,7 @@ opacity: 1
 }
 
 .responsive{
-	display: none;
+	display: block;
 }
 
 .bar{
