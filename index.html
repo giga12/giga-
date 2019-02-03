@@ -18,15 +18,15 @@ sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossor
 
 </head>
 <body>
-	<div class="first">
-		<img class="logo" src="img.svg">
 
-      <nav style="margin-top: 30px; margin-right: 15px;" >
-   <div class="burger" style="position: absolute;">
-      <div class="bar bar-1"></div>
-      <div class="bar bar-2"></div>
-      <div class="bar bar-3"></div>
-    </div> 
+<span class="burger" style="font-size:30px; cursor:pointer; background-color: brown; position: absolute; width: 30px; height: 30px; margin-left: 980px" onclick="openNav()">&#9776;</span>
+
+  <div class="first">
+		<img class="logo" src="img.svg" >
+
+
+
+      <nav style="margin-top: 30px; margin-right: 15px; " >
         <ul>
           <a class="menu" href="">HOME</a>
           <a class="menu" href="">PAGES</a>
@@ -36,22 +36,21 @@ sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossor
           <a class="menu" href="">CONTACT</a>          
         </ul>
 
-      </nav>		
+      </nav>	
 
 </div>
 
 
-<script type="text/javascript">
-  function myFuvction(x) {
-    
-  }
-</script>
 
-
-
-
-
-
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="">HOME</a>
+    <a href="">PAGES</a>
+    <a href="">FEATURE</a>
+    <a href="">SERVICES</a>
+    <a href="">BLOG</a>
+    <a href="">CONTACT</a>
+</div>
 
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
@@ -114,7 +113,7 @@ sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossor
 
     <div class="im2">
        <div class="img2">
-         <img class="asset2" src="https://i.ibb.co/vBMd1f6/Asset2.png" style="zoom: 30%"> 
+         <img class="asset2" src="https://i.ibb.co/vBMd1f6/Asset2.png" style= "zoom: 30%; "> 
        </div>
           <div class="caption">
             <h5 class="h5">SERVICES</h5>
@@ -125,7 +124,7 @@ sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossor
       </div>
     </div>
     <div class="im3">
-          <div class="img3"> <img class="asset3" src="https://i.ibb.co/ChFwjZW/Asset-3.png" style="zoom: 42%">
+          <div class="img3"> <img class="asset3" src="https://i.ibb.co/ChFwjZW/Asset-3.png" style="zoom: 42%; width: 60%">
           </div>
           <div class="caption">
             <h5 class="h5">OUR WORK</h5>
@@ -159,13 +158,12 @@ quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 
 <section>
   <div class="cont">
-<div> 
+<div>
 <div class="hover">
-  <img style="margin-left: 215px; margin-right: 10px; margin-top: 125px;" src="https://i.ibb.co/MSBYLwZ/1111.png">
-  <img src="https://i.ibb.co/tDdMt6Z/11.png">
+    <img style="margin-left: 215px; margin-right: 10px; margin-top: 125px;" src="https://i.ibb.co/MSBYLwZ/1111.png">
+    <img src="https://i.ibb.co/tDdMt6Z/11.png">
 </div>
   <img class="abc1" src="https://i.ibb.co/wpHd1Ss/Asset-3gi.png">
-
 </div>
 <div>
 <div class="hover1">
@@ -277,8 +275,33 @@ quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 
 
 
-
 <div class="table" style="display: flex;justify-content: flex-start;">
+
+
+  <div class="s-phone">
+    <div class="back">
+
+      <div class="mic"></div>
+      <div class="cam"></div>
+    </div>
+
+    <div id="screen">
+      
+      <div>
+      <img src="asset 3gi.png" style="width: 150px; height: 84px">
+      <img src="asset 3qw.png" style="width: 75px; height: 84px">  
+      </div>
+<div style="">
+        <img src="asset 4q.png" style="width: 75px; height: 84px">  
+        <img src="asset 4.png" style="width: 75px; height: 84px">   
+        <img src="asset 4q.png" style="width: 75px; height: 84px">  
+</div>
+
+     
+    </div>
+  </div>
+
+
 <div class="caption1">
   <h5 style="font-size:30px; color: white;">LOREM IPSUM</h5>
   <p style="color: white; margin-top: 5px;">
@@ -373,8 +396,15 @@ quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 </div>
 
 
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
 
-
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
  
 
 
