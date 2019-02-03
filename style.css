@@ -30,7 +30,7 @@ ul{
 .menu{
 	color: white;
 	margin-right: 15px;
-	transition: transform 1s;
+	transition: transform 0.5s;
 }
 .menu:hover{
 	size: 120%;
@@ -138,8 +138,8 @@ margin-right: 300px;
 	margin-top:75px;
 }
 .asset3{
-	margin-left: 25px;
-	margin-top: 30px;
+	margin-left: 45px;
+	margin-top: 50px;
 }
 
 .fut{
@@ -237,16 +237,18 @@ opacity: 1;
 
 
 .cont{
-display: inline-block;
-display: flex;
-justify-content: flex-start;
-	margin-top: 100px
+	display: inline-block;
+	display: flex;
+	justify-content: flex-start;
+	margin-top: 100px;
+	max-width: 1500px
 
 }
 .cont1{
 	display: flex;
 	justify-content: flex-start;
-
+    margin:0;
+    max-width: 1500px
 }
 
 .table{
@@ -257,9 +259,54 @@ justify-content: flex-start;
 	opacity: 0.6;
 }
 
+
+
+.s-phone{
+	width: 275px;
+	height: 300px;
+	margin-top: 25px;
+	background-color: rgb(0, 0, 0);
+	margin-left: 150px;
+	border-top-right-radius:20px;
+	border-top-left-radius: 20px;
+}
+
+.mic{
+	width: 50px;
+	height: 5px;
+	background-color: white;
+	border-radius: 3px;
+	margin-left: 110px;
+	margin-top: 5px
+}
+.back{
+	display: flex;
+	justify-content: flex-start;
+}
+.cam{
+	margin-top:1px;
+	width: 7px;
+	height: 7px;
+	margin-left: 50px;
+	margin-top: 5px;
+	border-radius:50%;
+	background-color: white
+
+}
+
+#screen{
+	max-width: 225px;
+	height: 252px;
+	background-color: black;
+	margin-top: 15px;
+	margin-left: 25px;
+	display: flex;
+	justify-content: flex-start;
+}
+
 .caption1{
 	width: 300px;
-	margin-left: 600px;
+	margin-left:200px;
 	margin-top: 75px;
 	height: 400px
 
@@ -278,7 +325,7 @@ justify-content: flex-start;
 }
 
 .abc1{
-	width: 538px;
+	width: 539px;
 	height: 270px;
 	transition: transform 1.5s;
 	position: static;
@@ -293,6 +340,7 @@ justify-content: flex-start;
 	height: 270px;
 
 }
+
 
 .hover:hover{
 opacity:0.5;
@@ -390,14 +438,13 @@ opacity: 1
 
 }
 
-.responsive{
+
+.burger{
 	display: none;
 }
 
-.bar{
-
-	display: block;
-
+.sidenav{
+	display: none;
 }
 
 @media only screen and (width:1080px)
@@ -406,22 +453,51 @@ opacity: 1
 	display: none;
 }
 
-.bar{
-	width: 30px;
-	height: 5px;
-	background-color: black;
-	margin-top: 5px;
-
-}
-
 .burger{
-	position: absolute;
-	margin-right: 100px
+	display: grid;
+}
+
+.sidenav{
+	display: block;
+}
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 1s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: white;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
 }
 
 
 }
-
 
 
 
