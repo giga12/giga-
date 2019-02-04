@@ -447,7 +447,7 @@ opacity: 1
 	display: none;
 }
 
-@media only screen and (width:1080px)
+@media only screen and (max-width:1080px)
 {
 .menu{
 	display: none;
