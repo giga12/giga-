@@ -1,15 +1,16 @@
 
 
 
+
 .logo{
 	height: 70px;
 	width: 6%;
 	margin-right: 35%;
 	display: inline-block;
- 	background-color:rgb(49, 51, 50);
-    	opacity: 0.8;
-	display:flex;
-	aign-items:center;
+	background-color:rgb(49, 51, 50);
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
 
 }
 .logo:hover{
@@ -516,8 +517,8 @@ opacity: 1
 	width: 30px; 
  	height: 53px; 
  	margin-left: 90%;
-	display:flex;
-	align-items:center;
+ 	display: flex;
+ 	align-items: center;
  	
 }
 
@@ -584,8 +585,8 @@ justify-content: space-around;
 	display: inline-block;
 	margin-left:10%;
 	background-color:rgb(49, 51, 50); 
-	display:flex;
-	align-items:center;
+	display: flex;
+	align-items: center;
 }
 
 
@@ -768,19 +769,64 @@ justify-content: space-around;
 
 
 
-
-
-
-
-
-
-
+.burger{
+	display: block;
+	font-size:30px;
+	cursor:pointer;
+	color: white;
+	position: absolute; 
+	width: 30px; 
+ 	height: 53px; 
+ 	margin-left: 90%;
+ 	display: flex;
+ 	align-items: center;
+ 	
 }
 
 
 
 
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 1s;
+  padding-top: 60px;
+}
 
+.sidenav a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: white;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.sidenav{
+	display: block;
+}
+
+
+
+
+}
 
 
 
