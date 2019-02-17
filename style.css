@@ -5,58 +5,51 @@
 .logo{
 	height: 70px;
 	width: 6%;
-	/*margin-right: 30%;*/
- /*background-color:rgb(49, 51, 50);*/
+	margin-right: 35%;
     opacity: 0.8;
+ 
+
 
 }
 .logo:hover{
 opacity:1;
 }
 .first{
-	position: fixed;
-	z-index: 9991;
 	height: 70px;
 	width: 100%;
-	background-color: #353434b5 !important;
+	background-color: rgb(49, 51, 50);
 	font-family: raleway; 
 	font-size: 15px;
 	display: flex;
-	align-items: center;
-	justify-content: space-around;
+	justify-content: flex-end;
+	position: fixed;
+	z-index: 9991;
+	background-color: #353434b5 !important;
 }
+
 /*.first.scrolled{
 	background-color: rgb(49, 51, 50);
 	background-color: black !important;
 }*/
 
-p{
-	text-align: center;
-}
-
 ul{
 	display: flex;
 	justify-content: flex-end;
-	align-items: center;
 	width: 500px;
 	height: 100%;
-	/*margin-right: 125px;*/
+	margin-right: 125px;
 }
-
 .menu{
 	padding:10px;
 	color: white;
 	margin-right: 15px;
 	transition: transform 0.5s;
 	text-decoration: none !important;
-
 }
 .menu:hover{
-	size: 110%;
-	transform: scale(1.1);
-	color: rgb(0, 199, 232);
-	text-decoration: none !important;
-
+	size: 120%;
+	transform: scale(1.2);
+color: rgb(0, 199, 232);
 }
 
 }
@@ -168,7 +161,7 @@ margin-right: 300px;
 
 }
 .father{
-	/*margin-top: 100px;*/
+	margin-top: 100px;
 	display: flex;
 	justify-content: center;
 
@@ -258,18 +251,18 @@ opacity: 1;
 
 
 .cont{
-	/*display: inline-block;*/
+	display: inline-block;
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 	margin-top: 100px;
-	width: 100%
+	max-width: 1500px
 
 }
 .cont1{
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
     margin:0;
-    width: 100%
+    max-width: 1500px
 }
 
 .table{
@@ -416,11 +409,7 @@ opacity: 1
 .num{
 	font-size: 80px;
 	margin-top:100px;
-	margin-bottom: 25px;
-	transition: all .4s ease-in-out;
-}
-.num:hover{
-	transform: scale(0.8);
+	margin-bottom: 25px
 }
 
 .last{
@@ -534,8 +523,12 @@ opacity: 1
 	color: white;
 	position: absolute; 
 	width: 30px; 
- 	height: 30px; 
- 	margin-left: 90%
+ 	height: 53px; 
+ 	margin-left: 90%;
+ 	display: flex;
+ 	align-items: center;
+ 	position: fixed;
+  	z-index: 9999999;
  	
 }
 
@@ -545,7 +538,6 @@ opacity: 1
 
 
 .sidenav {
-	position: absolute;
   height: 100%;
   width: 0;
   position: fixed;
@@ -600,9 +592,7 @@ justify-content: space-around;
 .logo{
 	height: 50px;
 	width: 10%;
-	display: inline-block;
-	margin-left:20%;
-	background-color:rgb(49, 51, 50); 
+	margin-left:10%; 
 }
 
 
@@ -672,8 +662,6 @@ justify-content: space-around;
 .caption1{
 	margin-left: 10%;
 	height:100px;
-	display: flex;
-	justify-content: center;
 }
 
 
@@ -785,6 +773,14 @@ justify-content: space-around;
 	display: block;
 }
 
+
+
+
+
+
+
+
+
 .burger{
 	display: block;
 	font-size:30px;
@@ -792,22 +788,23 @@ justify-content: space-around;
 	color: white;
 	position: absolute; 
 	width: 30px; 
- 	height: 30px; 
- 	margin-left: 90%
+ 	height: 53px; 
+ 	margin-left: 90%;
+ 	display: flex;
+ 	align-items: center;
+ 	position: fixed;
+    z-index: 9999999;
  	
 }
 
-.sidenav{
-	display: block;
-}
+
 
 
 .sidenav {
-	position: absolute;
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 9999999;
+  z-index: 1;
   top: 0;
   left: 0;
   background-color: #111;
@@ -816,6 +813,29 @@ justify-content: space-around;
   padding-top: 60px;
 }
 
+.sidenav a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: white;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.sidenav{
+	display: block;
+}
 
 
 
