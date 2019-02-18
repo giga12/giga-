@@ -22,6 +22,7 @@ opacity:1;
 	font-size: 15px;
 	display: flex;
 	justify-content: flex-end;
+	align-items:center;
 	position: fixed;
 	z-index: 9991;
 	background-color: #353434b5 !important;
@@ -40,13 +41,10 @@ ul{
 	margin-right: 125px;
 }
 .menu{
-	
 	color: white;
 	margin-right: 15px;
 	transition: transform 0.5s;
 	text-decoration: none !important;
-	display: flex;
-	align-items: center;
 }
 .menu:hover{
 	size: 120%;
