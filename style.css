@@ -45,6 +45,8 @@ ul{
 	margin-right: 15px;
 	transition: transform 0.5s;
 	text-decoration: none !important;
+	display: flex;
+	align-items: center;
 }
 .menu:hover{
 	size: 120%;
